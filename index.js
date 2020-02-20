@@ -106,7 +106,7 @@ console.log('Your Grade is ', getGrade(100));
 function getRequest(age) {
 let result = ' ';
         
-    if(age >= 18) {
+    if (age >= 18) {
         result = 'Allowed';
     } else result = 'Denied';
         
@@ -132,8 +132,8 @@ function getSumOfEvens() {
     let sum = 0;
     let quantity = 0;
     
-    for(n = 1; n < 99; n++) {
-        if(n % 2 === 0) {
+    for (n = 1; n < 99; n++) {
+        if (n % 2 === 0) {
             sum += n;
             quantity++;
         }
@@ -147,8 +147,8 @@ console.log('The Sum Of Even Numbers is ', getSumOfEvens());
 // 2
 function getSimpleNumber(n) {
     
-    for(let i = 2; i < n; i++) {
-        if(n % i === 0){
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0){
             
             return 'Comp';
         }   
@@ -175,7 +175,7 @@ console.log('the square ',getSquareNum(7));
 function getFactorial(n) {
     let multiply = n;
     
-    for(let i = 1; i < n; i++) {
+    for (let i = 1; i < n; i++) {
         multiply *= i; 
     }
 
@@ -189,7 +189,7 @@ function getSumOfEach(num) {
     let sum = 0;
     let eni;
     
-    while(num) {
+    while (num) {
         eni = num % 10;
         num = (num - eni) / 10;
         sum += eni;
@@ -205,12 +205,12 @@ function getMirrorSequence(num) {
     let result = 0;
     let eni = 0;
 
-    while(num) {
+    while (num) {
         eni = num % 10;
         num = (num - eni) / 10;
         result = (result * 10) + eni;
 
-        if(!num) {
+        if (!num) {
             return result;
         }
     }    
@@ -224,8 +224,8 @@ console.log('the raw changed to ',getMirrorSequence(123));
 function getMinValue(array) {
     let min = array[0];
     
-    for(let i = 1; i < array.length; i++) {
-        if(min > array[i]) {
+    for (let i = 1; i < array.length; i++) {
+        if (min > array[i]) {
             min = array[i];
         }
     }
@@ -239,8 +239,8 @@ console.log('min element is ', getMinValue([1, 2, 3, 5, 6, 0,-1]));
 function getMaxValue(array) {
     let max = array[0];
     
-    for(let i = 1; i < array.length; i++) {
-        if(max < array[i]) {
+    for (let i = 1; i < array.length; i++) {
+        if (max < array[i]) {
             max = array[i];
         }
     }
@@ -255,8 +255,8 @@ function getIndexMin(array) {
     let min = array[0];
     let minIndex = 0;
     
-    for(let i = 1; i < array.length; i++) {
-        if(array[i] < min) {
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] < min) {
             min = array[i];
             minIndex = i;
         }
@@ -272,8 +272,8 @@ function getIndexMax(array) {
     let max = array[0];
     let maxIndex = 0;
     
-    for(let i = 1; i < array.length; i++) {
-        if(maxIndex > max) {
+    for (let i = 1; i < array.length; i++) {
+        if (maxIndex > max) {
             max = array[i];
             maxIndex = i;
         }
@@ -288,8 +288,8 @@ console.log('index of max element is ', getIndexMax([5, 7, 3, 5, 9, 0]));
 function getSumOfOddIndex(array) {
     let sum = 0;
     
-    for(let i = 0; i < array.length; i++) {
-        if(i % 2 !== 0) {
+    for (let i = 0; i < array.length; i++) {
+        if (i % 2 !== 0) {
             sum += array[i];
         }
     }
@@ -303,7 +303,7 @@ console.log(getSumOfOddIndex([5, 6, 2, 5, 9, 0, 8, 3, 1]));
 function getReverseArr(array) {
     let reverse = [];
     
-    for(let i = array.length - 1; i >= 0; i--) {
+    for (let i = array.length - 1; i >= 0; i--) {
         reverse[reverse.length] = array[i];
         //reverse[array.length - 1 - i] = array[i];
         //console.log(reverse, 'reverse');       
@@ -319,8 +319,8 @@ console.log(getReverseArr([5, 6, 2, 3]));
 function getSumOfOdds(array) {
     let quantity = 0;
     
-    for(let i = 0; i < array.length; i++) {
-        if(array[i] % 2 !== 0) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 !== 0) {
             quantity++;
         }
     }
@@ -336,9 +336,9 @@ function getWeekDayz(num) {
     let array = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
     let day = ' ';
 
-    if(num > 0 && num < 8) {
-        for(let i = 0; i < array.length; i++) {
-            if(i === num - 1) {
+    if (num > 0 && num < 8) {
+        for (let i = 0; i < array.length; i++) {
+            if (i === num - 1) {
                 day = array[i]
             }
         }
